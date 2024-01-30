@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    border: 1px dotted red;
+
 }
 
 .container{
@@ -20,21 +22,19 @@
 
 .branding h2{
     color: white;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 1em;
 
 }
+
 
 .branding{
     display: grid;
-    grid-template-columns: .5fr .5fr;
+    grid-template-columns: .5fr 1fr;
     align-items: center;
-    gap: 10px;
+
 
 }
 
-.menu > ul, .settings-menu > ul{
+.menu > li, .settings-menu > li{
     list-style-type: none;
 
     color: white;
@@ -48,3 +48,12 @@
 }
 
 
+.menu, .settings-menu{
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+}
+
+.menu li, .settings-menu li{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
