@@ -60,7 +60,7 @@
 
 }
 
-.menu li, .settings-menu li{
+.menu > span, .settings-menu > span{
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
