@@ -7,7 +7,8 @@
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 6fr;
 }
 
 
@@ -15,9 +16,10 @@
     background-color: #1992D4;
     display: grid;
     grid-template-rows: 100px 200px 200px;
-    gap: 20px;
+    gap: 25px;
     height: 100vh;
-    justify-content: center;
+    justify-content: start;
+    grid-row: 1/-1;
 }
 
 .branding h2{
@@ -28,7 +30,7 @@
 
 .branding{
     display: grid;
-    grid-template-columns: .5fr 1fr;
+    grid-template-columns: 1fr 4fr;
     align-items: center;
 
 
@@ -53,7 +55,91 @@
     grid-template-rows: repeat(6,1fr);
 }
 
+.menu, .settings-menu, .branding{
+    padding-left: 20px;
+
+}
+
 .menu li, .settings-menu li{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 4fr;
+}
+
+
+.header{
+    display: grid;
+    box-shadow: black 0 0 10px;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header > .bottom-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: clamp(50px, 20%, 500px);
+}
+
+
+.header > .bottom-row > .left-items{
+    display: grid;
+    grid-template-columns: 1fr 2fr;;
+
+}
+
+.profileImg{
+    justify-self: end;
+    padding-right: 50px;
+}
+
+
+.header > .bottom-row > .right-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: start;
+    align-items: center;
+}
+
+
+
+button{
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;;
+    font-size: 1rem;
+    line-height: 1;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+
+.cta-button{
+    background-color: #1992D4;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 10px 20px;
+
+    height: 40px;
+    width: 100px;
+}
+
+.welcome span{
+    font-size: 0.8em;
+    font-weight: bold;
+
+}
+
+.user{
+    font-size: 1.4em;
+}
+
+.welcome{
+    display: grid;
+    grid-template-rows: .5fr 1fr;
 }
