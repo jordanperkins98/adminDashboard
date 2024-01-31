@@ -74,20 +74,22 @@
 
 .header > .bottom-row{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr .5fr;
     grid-template-rows: 1fr;
-    gap: clamp(50px, 20%, 500px);
+    gap: clamp(50px, 30%, 500px);
 }
 
 
 .header > .bottom-row > .left-items{
     display: grid;
-    grid-template-columns: 1fr 2fr;;
+    grid-template-columns: 1fr 3fr;
+    justify-items: start;
 
 }
 
 .profileImg{
-    justify-self: end;
+    justify-self: start;
+    margin-left: 50px;
     padding-right: 50px;
 }
 
@@ -95,6 +97,7 @@
 .header > .bottom-row > .right-items{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
     justify-items: start;
     align-items: center;
 }
