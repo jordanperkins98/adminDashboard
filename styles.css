@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     border: 1px dotted red;
+    overflow: hidden;
 
 }
 
@@ -82,14 +83,13 @@
 
 .header > .bottom-row > .left-items{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 6fr;
     justify-items: start;
 
 }
 
 .profileImg{
-    justify-self: start;
-    margin-left: 50px;
+    justify-self: end;
     padding-right: 50px;
 }
 
@@ -145,4 +145,36 @@ button{
 .welcome{
     display: grid;
     grid-template-rows: .5fr 1fr;
+}
+
+.top-row{
+    display: grid;
+    grid-template-columns: 4fr 2fr
+}
+
+.top-row > .left-items{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+}
+
+.top-row > .right-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+
+}
+
+.search{
+    background-color: #E2E8F0;
+    border-radius: 30px;
+    height: 30px;
+    align-self: center;
+}
+.main-content{
+    background-color: #DEE3EB;
+}
+
+.search-icon{
+    justify-self: center;
+    align-self: center;
 }
