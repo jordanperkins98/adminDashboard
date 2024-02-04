@@ -172,9 +172,73 @@ button{
 }
 .main-content{
     background-color: #DEE3EB;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 
 .search-icon{
     justify-self: center;
     align-self: center;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px;
+    grid-auto-rows: 1fr;
+    margin-left: 10px;
+    margin-bottom: 50px;
+}
+
+.title{
+    grid-column: 1 / -1;
+}
+
+.project-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(200px, 200px));
+    gap: 25px;
+    grid-column: 1 / -1;
+
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 140px 40px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.project-description{
+    font-size: 0.8em;
+}
+
+.card > .top-row{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 5px;
+    gap: 5px;
+    grid-row: 1 / 2;
+}
+
+.card > .top-row > h4{
+    align-self: end;
+}
+
+.card > .bottom-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card > .bottom-row > .right-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: end;
+    margin-right: 20px;
+    align-items: end;
+    padding: 5px;
+
+
 }
