@@ -174,7 +174,7 @@ button{
     background-color: #DEE3EB;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap: 10px;
+    gap: 25px;
 
 }
 
@@ -189,7 +189,7 @@ button{
     grid-template-rows: 50px;
     grid-auto-rows: 1fr;
     gap: 5px;
-    margin-left: 10px;
+    margin-left: 25px;
     margin-bottom: 50px;
 
 }
@@ -202,7 +202,7 @@ button{
 .project-cards{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(auto-fit, minmax(200px, 200px));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
     gap: 25px;
     grid-column: 1 / -1;
 
@@ -252,7 +252,7 @@ button{
     display: grid;
     grid-template-rows: 1fr 1fr;
     gap: 25px;
-    margin-right: 10px;
+    margin-right: 25px;
     margin-bottom: 50px;
 }
 
@@ -269,8 +269,12 @@ button{
 .annoucement-card{
     display: grid;
     background-color: white;
-    padding: 15px;
+    padding: 25px;
     border-radius: 10px;
+}
+
+.annoucement-card p{
+    font-size: 0.7em;
 }
 
 .trending{
@@ -286,7 +290,7 @@ button{
 .trending-card{
     display: grid;
     background-color: white;
-    padding: 15px;
+    padding: 25px;
     border-radius: 10px;
     grid-template-columns: 1fr;
     gap: 10px;
