@@ -232,12 +232,16 @@ button{
 
 .projects > .title{
     grid-column: 1 / -1;
+    font-size: 1.2em;
+    font-weight: 500;
     align-self: end;
 
 }
 
 .item > .title{
     align-self: end;
+    font-weight: 500;
+
 }
 
 .project-cards{
@@ -272,6 +276,7 @@ button{
 
 .project-description{
     font-size: 0.8em;
+    padding-right: 50px;
 }
 
 .card > .top-row{
@@ -359,6 +364,7 @@ button{
 
 .card-title{
     font-size: 1.2em;
+    font-weight: 500;
 
 }
 .annoucement-card{
