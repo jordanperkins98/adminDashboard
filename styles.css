@@ -1,14 +1,20 @@
+
 * {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 
+}
+
+html{
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
 }
 
 .container{
     display: grid;
     grid-template-columns: 1fr 6fr;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 1fr 5.5fr;
 }
 
 
@@ -35,8 +41,6 @@
     grid-template-columns: 1fr 4fr;
     align-items: center;
     gap: 10px
-
-
 }
 
 .menu > li, .settings-menu > li{
@@ -48,8 +52,10 @@
 .menu a, .settings-menu a{
     text-decoration: none;
     color: white;
+    justify-self: start;
+    align-self: center;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 
@@ -194,10 +200,11 @@ button{
     height: 30px;
     align-self: center;
 }
+
 .main-content{
     background-color: #DEE3EB;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3.5fr 1fr;
     gap: 25px;
 
 }
@@ -218,31 +225,50 @@ button{
     grid-auto-rows: 1fr;
     gap: 5px;
     margin-left: 25px;
-    margin-bottom: 50px;
+
+
 
 }
 
-.title{
+.projects > .title{
     grid-column: 1 / -1;
+    align-self: end;
+
+}
+
+.item > .title{
     align-self: end;
 }
 
 .project-cards{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
     gap: 25px;
     grid-column: 1 / -1;
+    margin-bottom: 50px;
+
+
 
 }
 
 .card{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 140px 40px;
+    grid-template-columns: 10px 1fr;
+    grid-template-rows: 1.2fr 1fr;
     background-color: white;
     border-radius: 10px;
+    overflow: hidden;
+
 }
+
+.colour-bar{
+    background-color: #F0B429;
+    grid-column: 1/2;
+    grid-row: 1/-1;
+
+}
+
 
 .project-description{
     font-size: 0.8em;
@@ -251,8 +277,10 @@ button{
 .card > .top-row{
     display: grid;
     grid-template-columns: 1fr;
-    padding: 5px;
+    padding: 20px;
+    padding-right: 50px;
     gap: 5px;
+    grid-column: 2/3;
     grid-row: 1 / 2;
 }
 
@@ -263,18 +291,31 @@ button{
 .card > .bottom-row{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column: 2/3;
 }
 
 .card > .bottom-row > .right-items{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-items: end;
+    justify-self: end;
+    align-self: center;
     margin-right: 20px;
     align-items: end;
     padding: 5px;
-
+    gap: 20px;
 
 }
+
+.star-like,.watch,.share{
+    height: 25px;
+    width: 25px;
+
+}
+
+.star-like:hover,.watch:hover,.share:hover {
+    cursor: pointer;
+}
+
 
 .profileImg-small{
     height: 50px;
@@ -311,9 +352,15 @@ button{
 }
 
 .annoucements > .card-title{
+
     align-self: end;
 }
 
+
+.card-title{
+    font-size: 1.2em;
+
+}
 .annoucement-card{
     display: grid;
     background-color: white;
@@ -349,8 +396,6 @@ button{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
-
-
 }
 
 .trending-profileImg{
@@ -368,9 +413,10 @@ button{
 
 .home-icon, .profile-icon, .message-icon, .history-icon, .tasks-icon,.communities-icon,.settings-icon,.support-icon,.privacy-icon{
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
-
-    height: 25px;
-    width: 25px;
+    justify-self: center;
+    align-self: center;
+    height: 20px;
+    width: 20px;
 
 }
 
