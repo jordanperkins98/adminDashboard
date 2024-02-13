@@ -19,7 +19,7 @@ html{
 
 
 .sidebar{
-    background-color: #1992D4;
+    background-color: #025E73;
     display: grid;
     grid-template-rows: 100px 200px 200px;
     gap: 25px;
@@ -132,7 +132,7 @@ button{
 
 
 .cta-button{
-    background-color: #1992D4;
+    background-color: #025E73;
     color: white;
     border-radius: 30px;
     font-weight: bold;
@@ -287,7 +287,7 @@ button{
 }
 
 .colour-bar{
-    background-color: #F0B429;
+    background-color: #F2A71B;
     grid-column: 1/2;
     grid-row: 1/-1;
 
