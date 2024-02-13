@@ -183,6 +183,9 @@ button{
     height: 25px;
     margin-bottom: 5px;
 }
+.notifications:hover{
+    cursor: pointer;
+}
 
 .main-username{
     justify-self: start;
@@ -201,6 +204,10 @@ button{
     align-self: center;
 }
 
+.search:hover{
+    cursor: text;
+}
+
 .main-content{
     background-color: #DEE3EB;
     display: grid;
@@ -216,6 +223,9 @@ button{
     margin-left: 20px;
     height: 30px;
 
+}
+.search-icon:hover{
+    cursor: pointer;
 }
 
 .projects{
@@ -242,6 +252,16 @@ button{
     align-self: end;
     font-weight: 500;
 
+}
+
+.item{
+    display: grid;
+    grid-template-rows: 2fr 4fr 1px;
+
+}
+
+.spacer{
+    background-color: lightgrey;
 }
 
 .project-cards{
@@ -277,6 +297,11 @@ button{
 .project-description{
     font-size: 0.8em;
     padding-right: 50px;
+    color: #636363;
+}
+
+.description, .trending-project{
+    color: #636363;
 }
 
 .card > .top-row{
@@ -329,6 +354,10 @@ button{
     border-radius: 50%;
 }
 
+.profileImg-small:hover{
+    cursor: pointer;
+}
+
 .profileImg{
     height: 60px;
     width: 60px;
@@ -370,7 +399,7 @@ button{
 .annoucement-card{
     display: grid;
     background-color: white;
-    padding: 25px;
+    padding: 20px 30px;
     border-radius: 10px;
 }
 
@@ -391,7 +420,7 @@ button{
 .trending-card{
     display: grid;
     background-color: white;
-    padding: 25px;
+    padding: 10px;
     border-radius: 10px;
     grid-template-columns: 1fr;
     gap: 10px;
@@ -404,8 +433,17 @@ button{
     grid-template-rows: 1fr 1fr;
 }
 
+.trending-item:hover{
+    cursor: pointer;
+}
+
 .trending-profileImg{
     grid-row: 1 / -1;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    justify-self: center;
+    align-self: center;
 }
 .trending-username{
     align-self: end;
@@ -428,5 +466,9 @@ button{
 
 .menu a {
     align-items: center;
+}
+
+.menu img, .settings-menu img{
+    cursor: pointer;
 }
 
